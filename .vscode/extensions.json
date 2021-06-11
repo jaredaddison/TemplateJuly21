@@ -2,6 +2,12 @@
   "recommendations": [
     "csstools.postcss",
     "octref.vetur",
-    "tabnine.tabnine"
+    "tabnine.tabnine",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "antfu.vite",
+    "antfu.iconify",
+    "antfu.slidev",
+    "antfu.theme-vitesse"
   ]
 }
