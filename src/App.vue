@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto p-4">
-        <router-view />
-    </div>
-</template>
+    <main class="container mx-auto">
+        <router-view/>
+    </main>
+</template>./views/Home.vue

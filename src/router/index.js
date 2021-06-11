@@ -7,12 +7,13 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home,
+        meta: {title:'Home Dashboard'}
     },
 ]
 
-const router = createRouter({
+const router = createRouter( {
     history: createWebHistory(),
     routes,
-})
+} )
 
 export default router

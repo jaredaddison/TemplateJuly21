@@ -1,6 +1,9 @@
 {
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
@@ -9,6 +12,7 @@
   "tailwindCSS.colorDecorators": true,
   "editor.dragAndDrop": true,
   "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
   "eslint.codeActionsOnSave.mode": "all",
   "vetur.completion.autoImport": true,
   "vetur.completion.scaffoldSnippetSources": {
@@ -36,7 +40,7 @@
       "wrapAttributes": false,
       "sortAttributes": true
     },
-"templateInterpolationService": true,
+    "templateInterpolationService": true,
   },
   "cSpell.words": [
     "nocheck"

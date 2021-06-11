@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-"~":path.resolve(__dirname,"/src/components"),
-"µ":path.resolve(__dirname,"/src/views"),
+      "~":path.resolve(__dirname,"/src/components"),
+      "µ":path.resolve(__dirname,"/src/views"),
     },
   },
   server: {
