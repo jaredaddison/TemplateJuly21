@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "plugin:vue/vue3-recommended", "prettier"
+    ],
+    "rules": {
+        "vue/no-unused-vars": 1,
+        "vue/one-component-per-file": 0,
+    }
+}

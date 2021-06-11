@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "csstools.postcss",
+    "octref.vetur",
+    "tabnine.tabnine"
+  ]
+}

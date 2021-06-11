@@ -1,0 +1,44 @@
+{
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.autoIndent": "advanced",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "tailwindCSS.colorDecorators": true,
+  "editor.dragAndDrop": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "vetur.completion.autoImport": true,
+  "vetur.completion.scaffoldSnippetSources": {
+    "workspace": "💼",
+    "user": "🗒️",
+    "vetur": "✌"
+  },
+  "vetur.experimental.templateInterpolationService": true,
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "emmet.includeLanguages": {
+    "postcss": "css",
+    "html": "html",
+    "vue": "vue",
+    "json": "json"
+  },
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.languageFeatures.codeActions": true,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": true,
+      "wrapAttributes": false,
+      "sortAttributes": true
+    },
+"templateInterpolationService": true,
+  },
+  "cSpell.words": [
+    "nocheck"
+  ]
+}
