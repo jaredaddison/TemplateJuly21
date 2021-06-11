@@ -1,6 +1,5 @@
 <template>
-  <myLogin/>
+    <myLogin />
 </template>
-<script setup>
-import myLogin from "~/myLogin.vue"
-</script>
+
+<script setup></script>

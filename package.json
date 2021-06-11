@@ -1,36 +1,37 @@
 {
-  "name": "starter-template",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite --host --open",
-    "lint": "eslint **/*.{js,vue} --fix .",
-    "prettier": "prettier **/*.{js,vue,html,json}",
-    "vti": "vti diagnostics",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.0.7",
-    "vue-router": "^4.0.8",
-    "vuex": "^4.0.0"
-  },
-  "devDependencies": {
-    "@headlessui/vue": "^1.2.0",
-    "@heroicons/vue": "^1.0.1",
-    "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@tailwindcss/forms": "^0.3.3",
-    "@tailwindcss/line-clamp": "^0.2.1",
-    "@tailwindcss/typography": "^0.4.1",
-    "@vitejs/plugin-vue": "^1.2.2",
-    "@vue/compiler-sfc": "^3.0.7",
-    "autoprefixer": "^10.2.5",
-    "eslint": "^7.26.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^7.9.0",
-    "postcss": "^8.2.15",
-    "prettier": "^2.3.0",
-    "tailwindcss": "^2.1.2",
-    "vite": "^2.3.2",
-    "vite-plugin-components": "^0.11.1"
-  }
+    "name": "starter-template",
+    "version": "0.0.0",
+    "scripts": {
+        "start": "npm i -g pnpm vti eslint prettier && pnpm install && pnpm dev",
+        "dev": "vite --host --open --port 4000",
+        "lint": "eslint **/*.{js,vue} --fix .",
+        "prettier": "prettier **/*.{js,vue,html,json}",
+        "vti": "vti diagnostics",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.0.7",
+        "vue-router": "^4.0.8",
+        "vuex": "^4.0.0"
+    },
+    "devDependencies": {
+        "@headlessui/vue": "^1.2.0",
+        "@heroicons/vue": "^1.0.1",
+        "@tailwindcss/aspect-ratio": "^0.2.1",
+        "@tailwindcss/forms": "^0.3.3",
+        "@tailwindcss/line-clamp": "^0.2.1",
+        "@tailwindcss/typography": "^0.4.1",
+        "@vitejs/plugin-vue": "^1.2.2",
+        "@vue/compiler-sfc": "^3.0.7",
+        "autoprefixer": "^10.2.5",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-vue": "^7.9.0",
+        "postcss": "^8.2.15",
+        "prettier": "^2.3.0",
+        "tailwindcss": "^2.1.2",
+        "vite": "^2.3.2",
+        "vite-plugin-components": "^0.11.1"
+    }
 }
