@@ -17,6 +17,7 @@ specifiers:
   prettier: ^2.3.0
   tailwindcss: ^2.1.2
   vite: ^2.3.2
+  vite-plugin-components: ^0.11.1
   vue: ^3.0.7
   vue-router: ^4.0.8
   vuex: ^4.0.0
@@ -27,12 +28,12 @@ dependencies:
   vuex: 4.0.1_vue@3.1.1
 
 devDependencies:
-  '@headlessui/vue': registry.npmjs.org/@headlessui/vue/1.2.0_vue@3.1.1
-  '@heroicons/vue': registry.npmjs.org/@heroicons/vue/1.0.1_vue@3.1.1
-  '@tailwindcss/aspect-ratio': registry.npmjs.org/@tailwindcss/aspect-ratio/0.2.1_tailwindcss@2.1.4
-  '@tailwindcss/forms': registry.npmjs.org/@tailwindcss/forms/0.3.3_tailwindcss@2.1.4
-  '@tailwindcss/line-clamp': registry.npmjs.org/@tailwindcss/line-clamp/0.2.1_tailwindcss@2.1.4
-  '@tailwindcss/typography': registry.npmjs.org/@tailwindcss/typography/0.4.1_tailwindcss@2.1.4
+  '@headlessui/vue': 1.2.0_vue@3.1.1
+  '@heroicons/vue': 1.0.1_vue@3.1.1
+  '@tailwindcss/aspect-ratio': 0.2.1_tailwindcss@2.1.4
+  '@tailwindcss/forms': 0.3.3_tailwindcss@2.1.4
+  '@tailwindcss/line-clamp': 0.2.1_tailwindcss@2.1.4
+  '@tailwindcss/typography': 0.4.1_tailwindcss@2.1.4
   '@vitejs/plugin-vue': 1.2.3_@vue+compiler-sfc@3.1.1
   '@vue/compiler-sfc': 3.1.1_vue@3.1.1
   autoprefixer: 10.2.6_postcss@8.3.2
@@ -43,6 +44,7 @@ devDependencies:
   prettier: 2.3.1
   tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
   vite: 2.3.7
+  vite-plugin-components: 0.11.1_vite@2.3.7
 
 packages:
 
@@ -100,6 +102,23 @@ packages:
       purgecss: 3.1.3
     dev: true
 
+  /@headlessui/vue/1.2.0_vue@3.1.1:
+    resolution: {integrity: sha512-nATOiQyGik8qoGFnWdWDaMWlpBLBaybhsa4drUoz/vMggw2fmXqzilAfMXHDwvqzh35SkSb13BEWA8kUSUNgkg==, registry: https://registry.yarnpkg.com/}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.1.1
+    dev: true
+
+  /@heroicons/vue/1.0.1_vue@3.1.1:
+    resolution: {integrity: sha512-pClbScVNpkBCHdM86+EAjQ5iUAs1PVjRHDFRNImQQyot75KrAk4SDfeKGDkQqPaGdJ9ZHIK13cl2W0eYc29QWg==, registry: https://registry.yarnpkg.com/}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.1.1
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -119,6 +138,43 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.11.0
+    dev: true
+
+  /@tailwindcss/aspect-ratio/0.2.1_tailwindcss@2.1.4:
+    resolution: {integrity: sha512-aDFi80aHQ3JM3symJ5iKU70lm151ugIGFCI0yRZGpyjgQSDS+Fbe93QwypC1tCEllQE8p0S7TUu20ih1b9IKLA==, registry: https://registry.yarnpkg.com/}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
+    dev: true
+
+  /@tailwindcss/forms/0.3.3_tailwindcss@2.1.4:
+    resolution: {integrity: sha512-U8Fi/gq4mSuaLyLtFISwuDYzPB73YzgozjxOIHsK6NXgg/IWD1FLaHbFlWmurAMyy98O+ao74ksdQefsquBV1Q==, registry: https://registry.yarnpkg.com/}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      mini-svg-data-uri: 1.3.3
+      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
+    dev: true
+
+  /@tailwindcss/line-clamp/0.2.1_tailwindcss@2.1.4:
+    resolution: {integrity: sha512-Hq2KJY1+T2v7jw/mnT3mnC7CKbp5kj1XTqzSb2xbEt1j+JkxIR6N3ijsN/WevZtsKJfVE1KOejA/3IRKuhZEsQ==, registry: https://registry.yarnpkg.com/}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
+    dev: true
+
+  /@tailwindcss/typography/0.4.1_tailwindcss@2.1.4:
+    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==, registry: https://registry.yarnpkg.com/}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      lodash.uniq: 4.5.0
+      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
     dev: true
 
   /@vitejs/plugin-vue/1.2.3_@vue+compiler-sfc@3.1.1:
@@ -487,6 +543,18 @@ packages:
 
   /debug/4.3.1:
     resolution: {integrity: sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+    dev: true
+
+  /debug/4.3.2:
+    resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1050,12 +1118,20 @@ packages:
     resolution: {integrity: sha1-soqmKIorn8ZRA1x3EfZathkDMaY=}
     dev: true
 
+  /lodash.castarray/4.4.0:
+    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=, registry: https://registry.yarnpkg.com/}
+    dev: true
+
   /lodash.clonedeep/4.5.0:
     resolution: {integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=}
     dev: true
 
+  /lodash.isplainobject/4.0.6:
+    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=, registry: https://registry.yarnpkg.com/}
+    dev: true
+
   /lodash.merge/4.6.2:
-    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==, registry: https://registry.yarnpkg.com/}
     dev: true
 
   /lodash.toarray/4.4.0:
@@ -1068,6 +1144,10 @@ packages:
 
   /lodash.truncate/4.4.2:
     resolution: {integrity: sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=}
+    dev: true
+
+  /lodash.uniq/4.5.0:
+    resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=, registry: https://registry.yarnpkg.com/}
     dev: true
 
   /lodash/4.17.21:
@@ -1110,6 +1190,11 @@ packages:
     dependencies:
       braces: 3.0.2
       picomatch: 2.3.0
+    dev: true
+
+  /mini-svg-data-uri/1.3.3:
+    resolution: {integrity: sha512-+fA2oRcR1dJI/7ITmeQJDrYWks0wodlOz0pAEhKYJ2IVc1z0AnwJUsKY2fzFmPAM3Jo9J0rBx8JAA9QQSJ5PuA==, registry: https://registry.yarnpkg.com/}
+    hasBin: true
     dev: true
 
   /minimatch/3.0.4:
@@ -1638,6 +1723,21 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
+  /vite-plugin-components/0.11.1_vite@2.3.7:
+    resolution: {integrity: sha512-rApT5gc8hLgIgO4+8xtlt81UD76mUvsTtx44UZViJJGYFr8ofEALlgRn5Fwai1MHbOlWWdOfPMvMa3ooC52COQ==}
+    peerDependencies:
+      vite: ^2.0.0-beta.69
+    dependencies:
+      chokidar: 3.5.1
+      debug: 4.3.2
+      fast-glob: 3.2.5
+      magic-string: 0.25.7
+      minimatch: 3.0.4
+      vite: 2.3.7
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /vite/2.3.7:
     resolution: {integrity: sha512-Y0xRz11MPYu/EAvzN94+FsOZHbSvO6FUvHv127CyG7mV6oDoay2bw+g5y9wW3Blf8OY3chaz3nc/DcRe1IQ3Nw==}
     engines: {node: '>=12.0.0'}
@@ -1722,107 +1822,4 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: true
-
-  registry.npmjs.org/@headlessui/vue/1.2.0_vue@3.1.1:
-    resolution: {integrity: sha512-nATOiQyGik8qoGFnWdWDaMWlpBLBaybhsa4drUoz/vMggw2fmXqzilAfMXHDwvqzh35SkSb13BEWA8kUSUNgkg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@headlessui/vue/-/vue-1.2.0.tgz}
-    id: registry.npmjs.org/@headlessui/vue/1.2.0
-    name: '@headlessui/vue'
-    version: 1.2.0
-    engines: {node: '>=10'}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      vue: 3.1.1
-    dev: true
-
-  registry.npmjs.org/@heroicons/vue/1.0.1_vue@3.1.1:
-    resolution: {integrity: sha512-pClbScVNpkBCHdM86+EAjQ5iUAs1PVjRHDFRNImQQyot75KrAk4SDfeKGDkQqPaGdJ9ZHIK13cl2W0eYc29QWg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@heroicons/vue/-/vue-1.0.1.tgz}
-    id: registry.npmjs.org/@heroicons/vue/1.0.1
-    name: '@heroicons/vue'
-    version: 1.0.1
-    peerDependencies:
-      vue: '>= 3'
-    dependencies:
-      vue: 3.1.1
-    dev: true
-
-  registry.npmjs.org/@tailwindcss/aspect-ratio/0.2.1_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-aDFi80aHQ3JM3symJ5iKU70lm151ugIGFCI0yRZGpyjgQSDS+Fbe93QwypC1tCEllQE8p0S7TUu20ih1b9IKLA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@tailwindcss/aspect-ratio/-/aspect-ratio-0.2.1.tgz}
-    id: registry.npmjs.org/@tailwindcss/aspect-ratio/0.2.1
-    name: '@tailwindcss/aspect-ratio'
-    version: 0.2.1
-    peerDependencies:
-      tailwindcss: '>=2.0.0'
-    dependencies:
-      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
-    dev: true
-
-  registry.npmjs.org/@tailwindcss/forms/0.3.3_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-U8Fi/gq4mSuaLyLtFISwuDYzPB73YzgozjxOIHsK6NXgg/IWD1FLaHbFlWmurAMyy98O+ao74ksdQefsquBV1Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.3.tgz}
-    id: registry.npmjs.org/@tailwindcss/forms/0.3.3
-    name: '@tailwindcss/forms'
-    version: 0.3.3
-    peerDependencies:
-      tailwindcss: '>=2.0.0'
-    dependencies:
-      mini-svg-data-uri: registry.npmjs.org/mini-svg-data-uri/1.3.3
-      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
-    dev: true
-
-  registry.npmjs.org/@tailwindcss/line-clamp/0.2.1_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-Hq2KJY1+T2v7jw/mnT3mnC7CKbp5kj1XTqzSb2xbEt1j+JkxIR6N3ijsN/WevZtsKJfVE1KOejA/3IRKuhZEsQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@tailwindcss/line-clamp/-/line-clamp-0.2.1.tgz}
-    id: registry.npmjs.org/@tailwindcss/line-clamp/0.2.1
-    name: '@tailwindcss/line-clamp'
-    version: 0.2.1
-    peerDependencies:
-      tailwindcss: '>=2.0.0'
-    dependencies:
-      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
-    dev: true
-
-  registry.npmjs.org/@tailwindcss/typography/0.4.1_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.4.1.tgz}
-    id: registry.npmjs.org/@tailwindcss/typography/0.4.1
-    name: '@tailwindcss/typography'
-    version: 0.4.1
-    peerDependencies:
-      tailwindcss: '>=2.0.0'
-    dependencies:
-      lodash.castarray: registry.npmjs.org/lodash.castarray/4.4.0
-      lodash.isplainobject: registry.npmjs.org/lodash.isplainobject/4.0.6
-      lodash.merge: registry.npmjs.org/lodash.merge/4.6.2
-      lodash.uniq: registry.npmjs.org/lodash.uniq/4.5.0
-      tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
-    dev: true
-
-  registry.npmjs.org/lodash.castarray/4.4.0:
-    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.castarray/-/lodash.castarray-4.4.0.tgz}
-    name: lodash.castarray
-    version: 4.4.0
-    dev: true
-
-  registry.npmjs.org/lodash.isplainobject/4.0.6:
-    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz}
-    name: lodash.isplainobject
-    version: 4.0.6
-    dev: true
-
-  registry.npmjs.org/lodash.merge/4.6.2:
-    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz}
-    name: lodash.merge
-    version: 4.6.2
-    dev: true
-
-  registry.npmjs.org/lodash.uniq/4.5.0:
-    resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz}
-    name: lodash.uniq
-    version: 4.5.0
-    dev: true
-
-  registry.npmjs.org/mini-svg-data-uri/1.3.3:
-    resolution: {integrity: sha512-+fA2oRcR1dJI/7ITmeQJDrYWks0wodlOz0pAEhKYJ2IVc1z0AnwJUsKY2fzFmPAM3Jo9J0rBx8JAA9QQSJ5PuA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz}
-    name: mini-svg-data-uri
-    version: 1.3.3
-    hasBin: true
     dev: true
