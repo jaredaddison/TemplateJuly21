@@ -1,6 +1,9 @@
 {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
   "editor.autoClosingQuotes": "beforeWhitespace",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "onFocusChange",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -21,7 +24,6 @@
     "vetur": "✌"
   },
   "vetur.experimental.templateInterpolationService": true,
-  "vetur.format.defaultFormatter.postcss": "prettier",
   "emmet.includeLanguages": {
     "postcss": "css",
     "html": "html",
@@ -44,5 +46,5 @@
   },
   "cSpell.words": [
     "nocheck"
-  ]
+  ],
 }
