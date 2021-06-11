@@ -1,12 +1,9 @@
-module.exports = {
-    mode: 'jit',
-    purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {},
-    },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
+export const mode = 'jit'
+export const purge = [ './index.html', './src/**/*.{vue,js,ts,jsx,tsx}' ]
+export const darkMode = false
+export const theme = {
+    extend: {},
+}
+export const variants = {
+    extend: {},
 }
