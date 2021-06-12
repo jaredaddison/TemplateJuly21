@@ -2,12 +2,13 @@
   "recommendations": [
     "csstools.postcss",
     "octref.vetur",
-    "tabnine.tabnine",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "antfu.vite",
     "antfu.iconify",
     "antfu.slidev",
-    "antfu.theme-vitesse"
+    "antfu.theme-vitesse",
+    "bradlc.vscode-tailwindcss",
+    "xabikos.javascriptsnippets"
   ]
 }
