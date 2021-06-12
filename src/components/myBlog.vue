@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
     <div class="absolute inset-0">
@@ -6,12 +5,8 @@
     </div>
     <div class="relative max-w-7xl mx-auto">
       <div class="text-center">
-        <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-          The Vite Vet's Blog
-        </h2>
-        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-          Clinical Updates and Information
-        </p>
+        <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl" v-text="vTitle" />
+        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4" v-text="vsubTitle" />
       </div>
       <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
         <div v-for="post in posts" :key="post.title" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -65,7 +60,12 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { defineProps } from 'vue'
+
+let vTitle = 'The ViteVets View'
+let vsubTitle = 'Clinical Information and News'
+
 const posts = [
   {
     title: 'Boost your conversion rate',
@@ -122,12 +122,4 @@ const posts = [
     },
   },
 ]
-
-export default {
-  setup() {
-    return {
-      posts,
-    }
-  },
-}
 </script>

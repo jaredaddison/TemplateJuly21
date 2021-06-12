@@ -2,10 +2,10 @@
     "name": "starter-template",
     "version": "0.0.0",
     "scripts": {
-        "start": "npm i -g pnpm vti eslint prettier && pnpm install && pnpm dev",
+        "start": "npm install -g pnpm pnpm intall -g vti eslint prettier && pnpm install && pnpm dev",
         "dev": "vite --host --open --port 4000",
-        "lint": "eslint **/*.{js,vue} --fix .",
-        "prettier": "prettier **/*.{js,vue,html,json}",
+        "lint": "eslint **/*.{js,vue,html,json} --fix .",
+        "prettier": "prettier **/*.{js,vue,html,json} --write .",
         "vti": "vti diagnostics",
         "build": "vite build",
         "serve": "vite preview"
@@ -27,7 +27,7 @@
         "autoprefixer": "^10.2.5",
         "eslint": "^7.26.0",
         "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-vue": "^7.9.0",
+        "eslint-plugin-vue": "^7.11.0",
         "postcss": "^8.2.15",
         "prettier": "^2.3.0",
         "tailwindcss": "^2.1.2",

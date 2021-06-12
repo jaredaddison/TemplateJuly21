@@ -2,6 +2,9 @@
   "recommendations": [
     "csstools.postcss",
     "octref.vetur",
+    "tabnine.tabnine-vscode",
+    "csstools.postcss",
+    "octref.vetur",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "antfu.vite",
@@ -9,6 +12,9 @@
     "antfu.slidev",
     "antfu.theme-vitesse",
     "bradlc.vscode-tailwindcss",
-    "xabikos.javascriptsnippets"
+    "xabikos.javascriptsnippets",
+    "editorconfig.editorconfig",
+    "tabnine.tabnine-vscode",
+    "antfu.theme-vitesse"
   ]
 }

@@ -1,8 +1,8 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-      },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.autoClosingQuotes": "beforeWhitespace",
   "files.autoSave": "onFocusChange",
   "editor.formatOnPaste": true,
@@ -37,14 +37,14 @@
       "wrap_attributes": "force-expand-multiline"
     },
     "prettyhtml": {
-      "printWidth": 100,
+      "printWidth": 80,
       "singleQuote": true,
       "wrapAttributes": false,
       "sortAttributes": true
     },
     "templateInterpolationService": true,
   },
-  "cSpell.words": [
-    "nocheck"
-  ],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
 }

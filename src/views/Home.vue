@@ -1,8 +1,8 @@
 <template>
-    <myLogin />
-    <myHero />
-    <myPricing />
-    <myFooter />
+	<myHero />
+	<myFeature />
+	<mypricing />
+	<myFooter />
 </template>
 
 <script setup></script>

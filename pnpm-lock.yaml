@@ -12,7 +12,7 @@ specifiers:
   autoprefixer: ^10.2.5
   eslint: ^7.26.0
   eslint-config-prettier: ^8.3.0
-  eslint-plugin-vue: ^7.9.0
+  eslint-plugin-vue: ^7.11.0
   postcss: ^8.2.15
   prettier: ^2.3.0
   tailwindcss: ^2.1.2
@@ -103,7 +103,7 @@ packages:
     dev: true
 
   /@headlessui/vue/1.2.0_vue@3.1.1:
-    resolution: {integrity: sha512-nATOiQyGik8qoGFnWdWDaMWlpBLBaybhsa4drUoz/vMggw2fmXqzilAfMXHDwvqzh35SkSb13BEWA8kUSUNgkg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-nATOiQyGik8qoGFnWdWDaMWlpBLBaybhsa4drUoz/vMggw2fmXqzilAfMXHDwvqzh35SkSb13BEWA8kUSUNgkg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.2.0.tgz}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.0.0
@@ -112,7 +112,7 @@ packages:
     dev: true
 
   /@heroicons/vue/1.0.1_vue@3.1.1:
-    resolution: {integrity: sha512-pClbScVNpkBCHdM86+EAjQ5iUAs1PVjRHDFRNImQQyot75KrAk4SDfeKGDkQqPaGdJ9ZHIK13cl2W0eYc29QWg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-pClbScVNpkBCHdM86+EAjQ5iUAs1PVjRHDFRNImQQyot75KrAk4SDfeKGDkQqPaGdJ9ZHIK13cl2W0eYc29QWg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@heroicons/vue/-/vue-1.0.1.tgz}
     peerDependencies:
       vue: '>= 3'
     dependencies:
@@ -141,7 +141,7 @@ packages:
     dev: true
 
   /@tailwindcss/aspect-ratio/0.2.1_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-aDFi80aHQ3JM3symJ5iKU70lm151ugIGFCI0yRZGpyjgQSDS+Fbe93QwypC1tCEllQE8p0S7TUu20ih1b9IKLA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-aDFi80aHQ3JM3symJ5iKU70lm151ugIGFCI0yRZGpyjgQSDS+Fbe93QwypC1tCEllQE8p0S7TUu20ih1b9IKLA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tailwindcss/aspect-ratio/-/aspect-ratio-0.2.1.tgz}
     peerDependencies:
       tailwindcss: '>=2.0.0'
     dependencies:
@@ -149,7 +149,7 @@ packages:
     dev: true
 
   /@tailwindcss/forms/0.3.3_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-U8Fi/gq4mSuaLyLtFISwuDYzPB73YzgozjxOIHsK6NXgg/IWD1FLaHbFlWmurAMyy98O+ao74ksdQefsquBV1Q==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-U8Fi/gq4mSuaLyLtFISwuDYzPB73YzgozjxOIHsK6NXgg/IWD1FLaHbFlWmurAMyy98O+ao74ksdQefsquBV1Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.3.3.tgz}
     peerDependencies:
       tailwindcss: '>=2.0.0'
     dependencies:
@@ -158,7 +158,7 @@ packages:
     dev: true
 
   /@tailwindcss/line-clamp/0.2.1_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-Hq2KJY1+T2v7jw/mnT3mnC7CKbp5kj1XTqzSb2xbEt1j+JkxIR6N3ijsN/WevZtsKJfVE1KOejA/3IRKuhZEsQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-Hq2KJY1+T2v7jw/mnT3mnC7CKbp5kj1XTqzSb2xbEt1j+JkxIR6N3ijsN/WevZtsKJfVE1KOejA/3IRKuhZEsQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.2.1.tgz}
     peerDependencies:
       tailwindcss: '>=2.0.0'
     dependencies:
@@ -166,7 +166,7 @@ packages:
     dev: true
 
   /@tailwindcss/typography/0.4.1_tailwindcss@2.1.4:
-    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.4.1.tgz}
     peerDependencies:
       tailwindcss: '>=2.0.0'
     dependencies:
@@ -1119,7 +1119,7 @@ packages:
     dev: true
 
   /lodash.castarray/4.4.0:
-    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/lodash.castarray/-/lodash.castarray-4.4.0.tgz}
     dev: true
 
   /lodash.clonedeep/4.5.0:
@@ -1127,11 +1127,11 @@ packages:
     dev: true
 
   /lodash.isplainobject/4.0.6:
-    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz}
     dev: true
 
   /lodash.merge/4.6.2:
-    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz}
     dev: true
 
   /lodash.toarray/4.4.0:
@@ -1147,7 +1147,7 @@ packages:
     dev: true
 
   /lodash.uniq/4.5.0:
-    resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz}
     dev: true
 
   /lodash/4.17.21:
@@ -1193,7 +1193,7 @@ packages:
     dev: true
 
   /mini-svg-data-uri/1.3.3:
-    resolution: {integrity: sha512-+fA2oRcR1dJI/7ITmeQJDrYWks0wodlOz0pAEhKYJ2IVc1z0AnwJUsKY2fzFmPAM3Jo9J0rBx8JAA9QQSJ5PuA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-+fA2oRcR1dJI/7ITmeQJDrYWks0wodlOz0pAEhKYJ2IVc1z0AnwJUsKY2fzFmPAM3Jo9J0rBx8JAA9QQSJ5PuA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.3.3.tgz}
     hasBin: true
     dev: true
 
