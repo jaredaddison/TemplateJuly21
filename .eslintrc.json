@@ -5,8 +5,8 @@
         "commonjs": true,
         "es2021": true
     },
+    "compilerOptions": {},
     "extends": [
-        "eslint:recommended",
         "plugin:vue/vue3-recommended",
         "prettier"
     ],
