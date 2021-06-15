@@ -1,7 +1,6 @@
 // @ts-nocheck
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from 'µ/Home.vue'
-import Login from 'µ/Login.vue'
+import Home from '~/Home.vue'
 
 const routes = [
     {

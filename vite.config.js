@@ -1,22 +1,24 @@
-import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path, { join } from "path"
+import path from "path"
+import { defineConfig } from 'vite'
 import ViteComponents from 'vite-plugin-components'
 import ViteIcons from 'vite-plugin-icons'
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),ViteComponents(),ViteIcons()],
+  plugins: [vue(),ViteComponents(ViteIcons())],
   resolve: {
     alias: {
       "@":path.resolve(__dirname,"/src/components"),
-      "~":path.resolve(__dirname,"/src/views"),
-    },
+      "~":path.resolve(__dirname,"/src/views")
+    }
   },
   server: {
     host: "localhost",
     port: 4000,
     open: './index.html',
-    fsServe: {strict:true},
+    fsServe: {strict:true}
   },
   build:{
     sourcemap:true
@@ -24,5 +26,5 @@ export default defineConfig({
   json: {
     namedExports: true,
     stringify: true
-  },
-});
+  }
+})

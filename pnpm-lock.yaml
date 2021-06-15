@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@headlessui/vue': ^1.2.0
   '@heroicons/vue': ^1.0.1
+  '@iconify/json': ^1.1.356
   '@tailwindcss/aspect-ratio': ^0.2.1
   '@tailwindcss/forms': ^0.3.3
   '@tailwindcss/line-clamp': ^0.2.1
@@ -18,6 +19,7 @@ specifiers:
   tailwindcss: ^2.1.2
   vite: ^2.3.2
   vite-plugin-components: ^0.11.1
+  vite-plugin-icons: ^0.6.2
   vue: ^3.0.7
   vue-router: ^4.0.8
   vuex: ^4.0.0
@@ -30,6 +32,7 @@ dependencies:
 devDependencies:
   '@headlessui/vue': 1.2.0_vue@3.1.1
   '@heroicons/vue': 1.0.1_vue@3.1.1
+  '@iconify/json': 1.1.356
   '@tailwindcss/aspect-ratio': 0.2.1_tailwindcss@2.1.4
   '@tailwindcss/forms': 0.3.3_tailwindcss@2.1.4
   '@tailwindcss/line-clamp': 0.2.1_tailwindcss@2.1.4
@@ -45,6 +48,7 @@ devDependencies:
   tailwindcss: 2.1.4_32565eec2408f3b70f749fe37ad22ae2
   vite: 2.3.7
   vite-plugin-components: 0.11.1_vite@2.3.7
+  vite-plugin-icons: 0.6.2_ff43b0d8f3cecc464e7cebf9d61195c3
 
 packages:
 
@@ -117,6 +121,14 @@ packages:
       vue: '>= 3'
     dependencies:
       vue: 3.1.1
+    dev: true
+
+  /@iconify/json-tools/1.0.10:
+    resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
+    dev: true
+
+  /@iconify/json/1.1.356:
+    resolution: {integrity: sha512-HeG9neoS5oatUTF6zlAAyDNPxbj0NvGDFqzd4wBtqu5mE4/xjhDO+S1obkgqpBrDedgoXDwIFkGx9Mx1HJCnaw==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -1738,6 +1750,24 @@ packages:
       - supports-color
     dev: true
 
+  /vite-plugin-icons/0.6.2_ff43b0d8f3cecc464e7cebf9d61195c3:
+    resolution: {integrity: sha512-FBaU06VtdXUWVwyxPhyjEfvWDWZh81V1a4KU3jb3gr5ocxN/piefcunrHfqUWvphwF51mi2gWpX9VoIOSj6gIw==}
+    peerDependencies:
+      '@iconify/json': '*'
+      '@vue/compiler-sfc': ^3.0.2
+      vue-template-compiler: ^2.6.12
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+      vue-template-compiler:
+        optional: true
+    dependencies:
+      '@iconify/json': 1.1.356
+      '@iconify/json-tools': 1.0.10
+      '@vue/compiler-sfc': 3.1.1_vue@3.1.1
+      vue-template-es2015-compiler: 1.9.1
+    dev: true
+
   /vite/2.3.7:
     resolution: {integrity: sha512-Y0xRz11MPYu/EAvzN94+FsOZHbSvO6FUvHv127CyG7mV6oDoay2bw+g5y9wW3Blf8OY3chaz3nc/DcRe1IQ3Nw==}
     engines: {node: '>=12.0.0'}
@@ -1776,6 +1806,10 @@ packages:
       '@vue/devtools-api': 6.0.0-beta.14
       vue: 3.1.1
     dev: false
+
+  /vue-template-es2015-compiler/1.9.1:
+    resolution: {integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==}
+    dev: true
 
   /vue/3.1.1:
     resolution: {integrity: sha512-j9fj3PNPMxo2eqOKYjMuss9XBS8ZtmczLY3kPvjcp9d3DbhyNqLYbaMQH18+1pDIzzVvQCQBvIf774LsjjqSKA==}
