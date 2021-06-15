@@ -10,8 +10,7 @@ export default defineConfig({
   plugins: [vue(),ViteComponents(ViteIcons())],
   resolve: {
     alias: {
-      "@":path.resolve(__dirname,"/src/components"),
-      "~":path.resolve(__dirname,"/src/views")
+      "@":path.resolve(__dirname,"/src")
     }
   },
   server: {

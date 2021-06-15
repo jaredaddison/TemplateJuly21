@@ -6,15 +6,15 @@
         "dev": "vite --host --open --port 4000",
         "lint": "eslint --ext .js,.ts,.vue src/",
         "lint:fix": "eslint --fix --ext .js,.ts,.vue src/",
-        "prettier": "prettier  --write --ext .js,.ts,.vue src/",      
+        "prettier": "prettier  --write --ext .js,.ts,.vue src/",
         "vti": "vti diagnostics",
         "build": "vite build",
         "serve": "vite preview"
     },
     "dependencies": {
-        "vue": "^3.0.7",
+        "vue": "^3.1.1",
         "vue-router": "^4.0.8",
-        "vuex": "^4.0.0"
+        "vuex": "^4.0.1"
     },
     "devDependencies": {
         "@headlessui/vue": "^1.2.0",
@@ -24,16 +24,17 @@
         "@tailwindcss/forms": "^0.3.3",
         "@tailwindcss/line-clamp": "^0.2.1",
         "@tailwindcss/typography": "^0.4.1",
-        "@vitejs/plugin-vue": "^1.2.2",
-        "@vue/compiler-sfc": "^3.0.7",
-        "autoprefixer": "^10.2.5",
-        "eslint": "^7.26.0",
+        "@vitejs/plugin-vue": "^1.2.3",
+        "@vue/compiler-sfc": "^3.1.1",
+        "autoprefixer": "^10.2.6",
+        "eslint": "^7.28.0",
         "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-vue": "^7.11.0",
-        "postcss": "^8.2.15",
-        "prettier": "^2.3.0",
-        "tailwindcss": "^2.1.2",
-        "vite": "^2.3.2",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-vue": "^7.11.1",
+        "postcss": "^8.3.4",
+        "prettier": "^2.3.1",
+        "tailwindcss": "^2.1.4",
+        "vite": "^2.3.7",
         "vite-plugin-components": "^0.11.1",
         "vite-plugin-icons": "^0.6.2"
     }

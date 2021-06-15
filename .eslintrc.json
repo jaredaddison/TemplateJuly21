@@ -1,28 +1,17 @@
 {
-    "env": {
-        "browser": true,
-        "node": true,
-        "commonjs": true,
-        "es2021": true
-    },
-    "compilerOptions": {},
     "extends": [
         "plugin:vue/vue3-recommended",
         "prettier"
     ],
-    "parserOptions": {
-        "ecmaVersion": 12,
-        "eslint": "auto"
-    },
     "plugins": [
         "vue",
         "prettier"
     ],
     "rules": {
-        "vue/no-unused-vars": 0,
-        "vue/one-component-per-file": 0,
-        "vue/no-parsing-error": 0,
-        "vue/no-undef": 0,
-        "vue/no-multiple-template-root": 0,
+        "no-multiple-template-root": 0,
+        "no-parsing-error": 0,
+        "no-undef": 0,
+        "no-unused-vars": 0,
+        "one-component-per-file": 0
     }
 }
