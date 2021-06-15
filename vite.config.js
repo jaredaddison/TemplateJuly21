@@ -7,7 +7,7 @@ import ViteIcons from 'vite-plugin-icons'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),ViteComponents(ViteIcons())],
+  plugins: [vue(),ViteComponents(),ViteIcons()],
   resolve: {
     alias: {
       "@":path.resolve(__dirname,"/src")
