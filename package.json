@@ -2,10 +2,11 @@
     "name": "starter-template",
     "version": "0.0.0",
     "scripts": {
-        "start": "npm install -g pnpm pnpm intall -g vti eslint prettier && pnpm install && pnpm dev",
+        "start": "npm install -g pnpm && pnpm i -g vti $$ pnpm i -g eslint && pnpm i -g prettier && pnpm i && pnpm dev",
         "dev": "vite --host --open --port 4000",
-        "lint": "eslint **/*.{js,vue,html,json} --fix .",
-        "prettier": "prettier **/*.{js,vue,html,json} --write .",
+        "lint": "eslint --ext .js,.ts,.vue src/",
+        "lint:fix": "eslint --fix --ext .js,.ts,.vue src/",
+        "prettier": "prettier  --write --ext .js,.ts,.vue src/",      
         "vti": "vti diagnostics",
         "build": "vite build",
         "serve": "vite preview"
