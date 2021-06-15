@@ -47,4 +47,12 @@
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!c",
+    "!csharp",
+    "!css",
+    "!graphql",
+    "vue"
+  ],
 }
