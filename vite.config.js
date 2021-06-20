@@ -2,28 +2,47 @@ import vue from '@vitejs/plugin-vue'
 import path from "path"
 import { defineConfig } from 'vite'
 import ViteComponents from 'vite-plugin-components'
-import ViteIcons from 'vite-plugin-icons'
+import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
+import WindiCSS from 'vite-plugin-windicss'
 
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),ViteComponents(),ViteIcons()],
   resolve: {
     alias: {
-      "@":path.resolve(__dirname,"/src")
+      '~/*': `${path.resolve(__dirname, 'src')}/*`,
     }
   },
-  server: {
-    host: "localhost",
-    port: 4000,
-    open: './index.html',
-    fsServe: {strict:true}
-  },
-  build:{
-    sourcemap:true
-    },
-  json: {
-    namedExports: true,
-    stringify: true
-  }
+  plugins: [
+    vue({include: [/\.vue$/]}),
+    Pages({
+      extensions: ['vue'],
+      pagesDir: [
+        { dir: "src/pages", baseRoute: "" },
+        { dir: "src/vets/pages", baseRoute: "vets" },
+        { dir: "src/admin/pages", baseRoute: "admin" },
+      ],
+      exclude: ["**/components/*.vue"],
+      importMode(path) {
+        return path.includes("about") ? "sync" : "async"
+      },
+      routeBlockLang: ['yaml'], //<route>name: default</route>
+    }),
+    Layouts(),
+    WindiCSS({
+      scan: {
+        dirs: ['.'], // all files in the cwd
+        fileExtensions: ['vue', 'js', 'ts'], // also enabled scanning for js/ts
+      },
+    }),
+    ViteComponents({
+      extensions: ['vue'],
+      customComponentResolvers: [
+        ViteIconsResolver({
+          componentPrefix: '',
+        }),
+      ],
+    }),
+    ViteIcons()
+  ]
 })

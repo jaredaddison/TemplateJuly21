@@ -16,7 +16,7 @@
             </div>
             <div class="flex items-center justify-end sm:mt-4 md:mt-0 md:pl-4 lg:pl-0">
                 <button class="focus:outline-none mr-8 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-6 py-2 text-xs">View</button>
-                <div @click="closeAlert()" class="cursor-pointer text-gray-400">
+                <div class="cursor-pointer text-gray-400" @click="closeAlert()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
                         <line x1="18" y1="6" x2="6" y2="18"></line>
                         <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-    name: "myButton",
+    name: "MyButton",
     mounted: function () {
         this.onLoad();
     },

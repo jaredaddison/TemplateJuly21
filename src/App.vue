@@ -1,5 +1,3 @@
 <template>
-    <main>
-        <router-view />
-    </main>
+<router-view class="container object-fit" msg="Welcome to the Matrix"/>
 </template>
