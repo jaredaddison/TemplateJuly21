@@ -1,4 +1,8 @@
 <template>
+  <MyHero />
+	<MyFeature />
+	<MyPricing />
+	<MyFooter />
   <div>
     <p class="text-4xl">
       <carbon-campsite class="inline-block" />
@@ -23,7 +27,7 @@
 
     <div>
       <button class="m-3 text-sm btn" :disabled="!name" @click="go">
-        {{go}}
+        Vets Portal
       </button>
     </div>
     Jarvis: {{ props.msg }}

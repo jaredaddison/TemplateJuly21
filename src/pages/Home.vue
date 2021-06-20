@@ -1,14 +1,6 @@
 <template>
-	<myHero />
-	<myFeature />
-	<mypricing />
-	<myFooter />
+	<MyHero />
+	<MyFeature />
+	<MyPricing />
+	<MyFooter />
 </template>
-
-<script setup></script>
-
-<style scoped lang="postcss">
-@import 'tailwindcss/base.css';
-@import 'tailwindcss/components.css';
-@import 'tailwindcss/utilities.css';
-</style>
