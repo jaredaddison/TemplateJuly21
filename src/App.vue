@@ -1,3 +1,3 @@
 <template>
-<router-view class="container object-fit" msg="Welcome to the Matrix"/>
+  <router-view class="dark" msg="Dr Jared" />
 </template>
