@@ -4,10 +4,13 @@ body,
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: 'Inter var', sans-serif;
+  @apply
+  antialiased font-family:['Inter-var', sans-serif],['Graphik','sans-serif'],['Merriweather', 'serif'];
 }
 
 html.dark {
-  background: #222;
+  @apply bg-gray-900 text-gray-50
 }
 
 #nprogress {
@@ -15,7 +18,7 @@ html.dark {
 }
 
 #nprogress .bar {
-  @apply bg-teal-600 opacity-75;
+  @apply bg-indigo-600 opacity-75;
 
   position: fixed;
   z-index: 1031;
@@ -28,14 +31,14 @@ html.dark {
 
 .btn {
   @apply px-4 py-1 rounded inline-block
-    bg-teal-600 text-white cursor-pointer
-    hover:bg-teal-700
+    bg-indigo-600 text-white cursor-pointer
+    hover:bg-indigo-700
     disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
 }
 
 .icon-btn {
   @apply inline-block cursor-pointer select-none
     opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-teal-600;
+    hover:opacity-100 hover:text-indigo-600;
   font-size: 0.9em;
 }

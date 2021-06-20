@@ -3,7 +3,6 @@
     "semi": false,
     "jsxSingleQuote": true,
     "plugins": ["eslint"],
-    "parser":"auto",
     "vueIndentScriptAndStyle": false,
     "embeddedLanguageFormatting": "auto",
     "tabWidth": 2,

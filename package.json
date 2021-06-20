@@ -1,13 +1,14 @@
 {
-    "name": "starter-template",
-    "version": "0.0.0",
+    "name": "djvitesse",
+    "version": "1.0.0",
     "scripts": {
-        "start": "sudo npm i -g pnpm eslint vti vls prettier && pnpm install && pnpm dev",
-        "dev": "vite --host --open --port 4000",
-        "lint": "eslint **/*.{vue,js}",
-        "lint:fix": "eslint --fix **/*.{vue,js}",
-        "prettier": "prettier **/*.{vue,js}",
-        "vti": "vti diagnostics --ext **/*.{vue,js}",
+        "start": "pnpm i && pnpm run dev",
+        "dev": "vite --open",
+        "lint": "eslint \"src/**/*.{vue,js}\"",
+        "lint:dry": "eslint \"src/**/*.{vue,js}\" --fix-dry-run",
+        "lint:fix": "eslint \"src/**/*.{vue,js}\" --fix",
+        "prettier": "prettier \"src/**/*.{vue,js}\"",
+        "vti": "vti diagnostics \"src/**/*.{vue,js}\"",
         "build": "vite build",
         "serve": "vite preview"
     },

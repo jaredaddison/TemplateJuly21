@@ -8,6 +8,11 @@ import Layouts from 'vite-plugin-vue-layouts'
 import WindiCSS from 'vite-plugin-windicss'
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~/*': `${path.resolve(__dirname, 'src')}/*`,
+    }
+  },
   plugins: [
     vue({include: [/\.vue$/]}),
     Pages({
@@ -39,23 +44,5 @@ export default defineConfig({
       ],
     }),
     ViteIcons()
-  ],
-  resolve: {
-    alias: {
-      '@/*': `${path.resolve(__dirname, 'src')}/*`,
-    }
-  },
-  server: {
-    host: "localhost",
-    port: 4000,
-    open: './index.html',
-    fsServe: {strict:true}
-  },
-  build:{
-    sourcemap:true
-    },
-  json: {
-    namedExports: true,
-    stringify: true
-  }
+  ]
 })
