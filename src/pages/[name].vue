@@ -46,7 +46,7 @@ import { useRouter } from 'vue-router'
 const name = ref('')
 const router = useRouter()
 const go = () => {
-  if (name.value) router.push(`/hi/${encodeURIComponent(name.value)}`)
+  if (name.value) router.push(`${encodeURIComponent(name.value)}`)
 }
 const props = defineProps({
   message: String,

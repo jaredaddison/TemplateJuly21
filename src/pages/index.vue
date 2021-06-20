@@ -45,7 +45,7 @@ const props = defineProps({
 })
 </script>
 
-<route>
+<route lang="yaml">
 meta:
   layout: home
 </route>

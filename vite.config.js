@@ -24,7 +24,7 @@ export default defineConfig({
       ],
       exclude: ["**/components/*.vue"],
       importMode(path) {
-        return path.includes("home") ? "sync" : "async"
+        return path.includes("about") ? "sync" : "async"
       },
       routeBlockLang: ['yaml'], //<route>name: default</route>
     }),

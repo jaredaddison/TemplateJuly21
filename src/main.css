@@ -1,38 +1,17 @@
 html,
 body,
 #app {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter var', sans-serif;
-  @apply
-  antialiased font-family:['Inter-var', sans-serif],['Graphik','sans-serif'],['Merriweather', 'serif'];
+  @apply antialiased min-h-screen min-w-screen mx-auto px-3 py-3
 }
 
 html.dark {
-  @apply bg-gray-900 text-gray-50
-}
-
-#nprogress {
-  pointer-events: none;
-}
-
-#nprogress .bar {
-  @apply bg-indigo-600 opacity-75;
-
-  position: fixed;
-  z-index: 1031;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 2px;
+  @apply antialiased min-h-screen min-w-screen mx-auto px-3 py-3 bg-black text-gray-100
 }
 
 .btn {
   @apply px-4 py-1 rounded inline-block
     bg-indigo-600 text-white cursor-pointer
-    hover:bg-indigo-700
+    hover:bg-indigo-800
     disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
 }
 

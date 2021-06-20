@@ -1,30 +1,27 @@
-<script setup lang="ts">
+<script setup>
 import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
 import { defineProps } from 'vue'
-
+const router = useRouter()
 const props = defineProps({
   message: String,
   name: {
     type: String,
-    required: true,
   },
 })
 
-const router = useRouter()
-const { t } = useI18n()
+
 </script>
 
 <template>
   <div>
     <p class="text-4xl">
-      <carbon-pedestrian class="inline-block" />
+      <heroicons-solid:badge-check class="inline-block w-10 h-10" fill="green" />
     </p>
     <p>
-      {{ t('intro.hi', { name: props.name }) }}
+      name: {{ props.name }}
     </p>
     <p class="text-sm opacity-50">
-      <em>{{ t('intro.dynamic-route') }}</em>
+      <em>Dynamic Routing</em>
     </p>
 
     <div>
@@ -32,7 +29,7 @@ const { t } = useI18n()
         class="btn m-3 text-sm mt-8"
         @click="router.back()"
       >
-        {{ t('button.back') }}
+Go Back
       </button>
     </div>
     Message from API: {{ props.message }}
