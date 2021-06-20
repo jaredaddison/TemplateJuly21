@@ -2,24 +2,18 @@
     "jsxBracketSameLine": true,
     "semi": false,
     "jsxSingleQuote": true,
-    "plugins": ["eslint", "prettier"],
-    "parser":"vue",
+    "plugins": ["eslint"],
+    "parser":"auto",
     "vueIndentScriptAndStyle": false,
-    "insertPragma": false,
-    "requirePragma": false,
-    "cursorOffset": -1,
     "embeddedLanguageFormatting": "auto",
     "tabWidth": 2,
     "useTabs": true,
     "printWidth": 90,
-    "endOfLine": "auto",
     "singleQuote": true,
     "trailingComma": "es5",
     "bracketSpacing": false,
-    "arrowParens": "always",
+    "arrowParens": "avoid",
     "quoteProps": "as-needed",
     "htmlWhitespaceSensitivity": "css",
-    "proseWrap": "preserve",
-    "overrides": []
-
+    "proseWrap": "preserve"
 }
