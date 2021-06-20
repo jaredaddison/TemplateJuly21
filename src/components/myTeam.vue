@@ -138,7 +138,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
 const people = [
     {
         name: 'Leonard Krasner',
@@ -150,12 +150,4 @@ const people = [
     },
     // More people...
 ]
-
-export default {
-    setup() {
-        return {
-            people,
-        }
-    },
-}
 </script>

@@ -37,7 +37,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { CheckIcon } from '@heroicons/vue/solid'
 
 const tiers = [
@@ -87,15 +87,4 @@ const tiers = [
     ],
   },
 ]
-
-export default {
-  components: {
-    CheckIcon,
-  },
-  setup() {
-    return {
-      tiers,
-    }
-  },
-}
 </script>

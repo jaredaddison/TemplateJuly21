@@ -1,6 +1,3 @@
 <template>
-	<MyHero />
-	<MyFeature />
-	<MyPricing />
-	<MyFooter />
+<router-view />
 </template>
