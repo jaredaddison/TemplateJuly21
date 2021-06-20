@@ -1,48 +1,6 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.autoClosingQuotes": "beforeWhitespace",
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.autoIndent": "advanced",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
-  },
-  "tailwindCSS.colorDecorators": true,
-  "editor.dragAndDrop": true,
-  "eslint.alwaysShowStatus": true,
-  "eslint.format.enable": true,
-  "eslint.codeActionsOnSave.mode": "all",
-  "vetur.completion.autoImport": true,
-  "vetur.completion.scaffoldSnippetSources": {
-    "workspace": "💼",
-    "user": "🗒️",
-    "vetur": "✌"
-  },
-  "vetur.experimental.templateInterpolationService": true,
-  "emmet.includeLanguages": {
-    "postcss": "css",
-    "html": "html",
-    "vue": "vue",
-    "json": "json"
-  },
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "vetur.languageFeatures.codeActions": true,
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {
-      "wrap_attributes": "force-expand-multiline"
-    },
-    "prettyhtml": {
-      "printWidth": 80,
-      "singleQuote": true,
-      "wrapAttributes": false,
-      "sortAttributes": true
-    },
-    "templateInterpolationService": true,
   },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
@@ -55,4 +13,49 @@
     "!graphql",
     "vue"
   ],
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.autoIndent": "advanced",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.dragAndDrop": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "emmet.includeLanguages": {
+    "html": "html",
+    "json": "json",
+    "postcss": "css",
+    "vue": "vue"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.format.enable": true,
+  "files.autoSave": "onFocusChange",
+  "tailwindCSS.colorDecorators": true,
+  "vetur.completion.autoImport": true,
+  "vetur.completion.scaffoldSnippetSources": {
+    "user": "🗒️",
+    "vetur": "✌",
+    "workspace": "💼"
+  },
+  "vetur.experimental.templateInterpolationService": true,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 80,
+      "singleQuote": true,
+      "sortAttributes": true,
+      "wrapAttributes": false
+    },
+    "templateInterpolationService": true
+  },
+  "vetur.languageFeatures.codeActions": true
 }

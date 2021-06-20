@@ -1,5 +1,4 @@
 <template>
-    <main>
-        <router-view />
-    </main>
+<MyHero />
+<router-view />
 </template>
