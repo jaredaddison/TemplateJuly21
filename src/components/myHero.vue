@@ -183,10 +183,11 @@
 					</p>
 				</div>
 			</main>
-			<img
-				src=""
+			<!--<img
+				class="object-center object-fit -mt-10 -mb-30 bg-transparent"
+				src="https://drjaredaddison.com/wp-content/uploads/2021/06/11111.jpg"
 				alt=""
-			/>
+			/>-->
 		</div>
 	</div>
 </template>
@@ -195,9 +196,9 @@
 	import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 	import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 	const navigation = [
-		{ name: 'Product', href: '#' },
-		{ name: 'Features', href: '#' },
-		{ name: 'Marketplace', href: '#' },
-		{ name: 'Company', href: '#' },
+		{ name: '', href: '/' },
+		{ name: '', href: '/' },
+		{ name: '', href: '/' },
+		{ name: '', href: '/' },
 	]
 </script>
