@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Vue from '@vitejs/plugin-vue'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Prism from 'markdown-it-prism'
@@ -13,43 +14,44 @@ import WindiCSS from 'vite-plugin-windicss'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/*': `${path.resolve(__dirname, 'src')}/*`,
-    }
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
   },
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
     }),
-    Pages({
-      extensions: ['vue', 'md'],
+  Pages({
+    extensions: ['vue', 'md'],
     }),
-    Layouts(),
-    Markdown({
-      markdownItSetup(md) {
-        // https://prismjs.com/
-        md.use(Prism)
-        md.use(LinkAttributes, {
-          pattern: /^https?:\/\//,
-          attrs: {
-            target: '_blank',
-            rel: 'noopener',
-          },
-        })
-      },
-    }),
-   WindiCSS({
-      safelist: 'prose prose-sm m-auto text-left',
-    }),
-    ViteComponents({
-      extensions: ['vue', 'md'],
-       customLoaderMatcher: id => id.endsWith('.md'),
-      globalComponentsDeclaration: true,
-      customComponentResolvers: [
+  Layouts(),
+  Markdown({
+    wrapperClasses: 'prose prose-sm m-auto text-left',
+    headEnabled: true,
+    markdownItSetup(md) {
+      md.use(Prism)
+      md.use(LinkAttributes, {
+      pattern: /^https?:\/\//,
+      attrs: {
+        target: '_blank',
+        rel: 'noopener',
+        },
+      })
+    },
+  }),
+  ViteComponents({
+    extensions: ['vue', 'md'],
+    customLoaderMatcher: id => id.endsWith('.md'),
+    globalComponentsDeclaration: true,
+    customComponentResolvers: [
         ViteIconsResolver({
           componentPrefix: '',
         }),
       ],
     }),
-    ViteIcons()
-  ]
+    ViteIcons(),
+    WindiCSS({
+      safelist: 'prose prose-sm m-auto text-left',
+    }),
+  ],
 })

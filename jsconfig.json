@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "checkJs": false,
+    "checkJs": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "target": "es2020",
@@ -23,6 +23,6 @@
     ".yarn"
   ],
   "typeAcquisition": {
-    "enable": true
+    "enable": false
   }
 }

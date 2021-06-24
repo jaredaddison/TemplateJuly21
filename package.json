@@ -3,20 +3,22 @@
     "version": "1.0.0",
     "scripts": {
         "start": "pnpm i && pnpm run dev",
-        "dev": "vite --open",
+        "dev": "vite --open --host --port 5000",
         "lint": "eslint \"src/**/*.{vue,js}\"",
         "lint:dry": "eslint \"src/**/*.{vue,js}\" --fix-dry-run",
-        "lint:fix": "eslint \"src/**/*.{vue,js}\" --fix",
+        "lint:fix": "eslint \"src/**/*.vue.js\" --fix",
         "prettier": "prettier \"src/**/*.{vue,js}\"",
-        "vti": "vti diagnostics \"src/**/*.{vue,js}\"",
+        "vti": "vti diagnostics",
         "build": "vite build",
         "serve": "vite preview"
     },
     "dependencies": {
-        "prism-theme-vars": "^0.2.2",
-        "vue": "^3.1.1",
-        "vue-router": "^4.0.8",
-        "vuex": "^4.0.1"
+        "@vueuse/core": "^5.0.2",
+    "@vueuse/head": "^0.6.0",
+    "nprogress": "^0.2.0",
+    "prism-theme-vars": "^0.2.2",
+    "vue": "^3.1.1",
+    "vue-router": "^4.0.8"
     },
     "devDependencies": {
         "@headlessui/vue": "^1.2.0",
