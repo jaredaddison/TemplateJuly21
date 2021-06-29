@@ -1,3 +1,6 @@
 <template>
-  <router-view class="dark" msg="Dr Jared" />
+	<router-view
+		class="isDark"
+		msg="Dr Jared"
+	/>
 </template>
