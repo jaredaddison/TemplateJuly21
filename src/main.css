@@ -1,11 +1,11 @@
 html,
 body,
 #app {
-  @apply antialiased min-h-screen min-w-screen mx-auto px-3 py-3
+  @apply antialiased min-h-screen min-w-screen mx-auto bg-white text-gray-800 border-2 border-black dark:border-white;
 }
 
 html.dark {
-  @apply antialiased min-h-screen min-w-screen mx-auto px-3 py-3 bg-black text-gray-100
+  @apply antialiased min-h-screen max-w-screen mx-auto bg-black text-gray-200 border-2 border-white;
 }
 
 .btn {
