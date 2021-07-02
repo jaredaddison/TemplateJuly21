@@ -1,30 +1,26 @@
 {
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "cSpell.enableFiletypes": [
-    "!asciidoc",
-    "!c",
-    "!csharp",
-    "!css",
-    "!graphql",
-    "vue"
-  ],
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.organizeImports": true
+    "source.organizeImports": true,
+    "source.fixAll": false
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.dragAndDrop": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.quickSuggestions": {
-    "strings": true
+    "strings": true,
+    "comments": true,
+    "text": true,
+    "other": true
   },
   "emmet.includeLanguages": {
     "html": "html",
@@ -50,12 +46,35 @@
       "wrap_attributes": "force-expand-multiline"
     },
     "prettyhtml": {
-      "printWidth": 80,
+      "printWidth": 120,
       "singleQuote": true,
       "sortAttributes": true,
       "wrapAttributes": false
     },
     "templateInterpolationService": true
   },
-  "vetur.languageFeatures.codeActions": true
+  "vetur.languageFeatures.codeActions": true,
+  "yaml.completion": true,
+  "yaml.format.enable": true,
+  "yaml.format.printWidth": 120,
+  "yaml.format.singleQuote": false,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 1"
+  ],
+  "git.allowForcePush": true,
+  "git.checkoutType": [
+    "local",
+    "remote",
+    "tags"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue"
+  ],
 }
