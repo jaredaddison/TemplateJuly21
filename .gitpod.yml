@@ -1,3 +1,13 @@
+$id: 'https://gitpod.io/gitpod.schema.json'
+$schema: 'http://json-schema.org/draft-07/schema#'
+title: Gitpod Config
+properties:
+  port: 3000
+  onOpen: open-preview
+  visibility: private
+tasks:
+  - prebuild: npm i -g pnpm
+  - command: pnpm install && pnpm dev
 vscode:
 extensions:
 - csstools.postcss
