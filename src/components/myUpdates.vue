@@ -1,19 +1,3 @@
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/line-clamp'),
-    ]
-  }
-  ```
--->
 <template>
   <ul class="divide-y divide-gray-200">
     <li v-for="message in messages" :key="message.id" class="relative bg-white py-5 px-4 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
@@ -36,7 +20,7 @@
   </ul>
 </template>
 
-<script>
+<script setup>
 const messages = [
   {
     id: 1,
@@ -49,12 +33,4 @@ const messages = [
   },
   // More messages...
 ]
-
-export default {
-  setup() {
-    return {
-      messages,
-    }
-  },
-}
 </script>

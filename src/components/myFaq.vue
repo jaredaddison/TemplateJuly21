@@ -26,7 +26,7 @@
 	</div>
 </template>
 
-<script>
+<script setup>
 	const faqs = [
 		{
 			id: 1,
@@ -36,13 +36,4 @@
 		},
 		// More questions...
 	]
-
-	export default {
-		setup()
-		{
-			return {
-				faqs,
-			}
-		},
-	}
 </script>

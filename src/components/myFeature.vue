@@ -39,7 +39,7 @@
 	</div>
 </template>
 
-<script>
+<script setup>
 	import
 		{
 			CloudUploadIcon,
@@ -58,13 +58,4 @@
 		{ name: 'Powerful API', icon: CogIcon },
 		{ name: 'Database Backups', icon: ServerIcon },
 	]
-
-	export default {
-		setup()
-		{
-			return {
-				features,
-			}
-		},
-	}
 </script>

@@ -170,7 +170,7 @@
   </Popover>
 </template>
 
-<script>
+<script setup>
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
 import {
   BookmarkAltIcon,
@@ -187,7 +187,6 @@ import {
   XIcon,
 } from '@heroicons/vue/outline'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
-
 const solutions = [
   {
     name: 'Analytics',
@@ -245,24 +244,4 @@ const recentPosts = [
   { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
   { id: 3, name: 'Improve your customer experience', href: '#' },
 ]
-
-export default {
-  components: {
-    Popover,
-    PopoverButton,
-    PopoverGroup,
-    PopoverPanel,
-    ChevronDownIcon,
-    MenuIcon,
-    XIcon,
-  },
-  setup() {
-    return {
-      solutions,
-      callsToAction,
-      resources,
-      recentPosts,
-    }
-  },
-}
 </script>

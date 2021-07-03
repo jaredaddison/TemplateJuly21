@@ -32,7 +32,7 @@
                 y="0"
                 width="4"
                 height="4"
-                class="text-vetpartners"
+                class="text-vetpartners-700"
                 fill="currentColor"
               />
             </pattern>
@@ -71,7 +71,7 @@
                 y="0"
                 width="4"
                 height="4"
-                class="text-vetpartners"
+                class="text-vetpartners-700"
                 fill="currentColor"
               />
             </pattern>
@@ -127,7 +127,7 @@
                       focus:outline-none
                       focus:ring-2
                       focus:ring-inset
-                      focus:ring-vetpartners
+                      focus:ring-vetpartners-700
                     "
                   >
                     <span class="sr-only">Open main menu</span>
@@ -136,7 +136,7 @@
                       xmlns:xlink="http://www.w3.org/1999/xlink"
                       aria-hidden="true"
                       role="img"
-                      class="bg-vetpartners"
+                      class="bg-vetpartners-700"
                       width="32"
                       height="32"
                       preserveAspectRatio="xMidYMid meet"
@@ -184,7 +184,7 @@
             >
               <span class="inline-flex rounded-md shadow">
                 <a
-                  href="mailto:jared.addison@vetpartners.net.au?subject=Question from the EMCC Seminar"
+                  href="mailto:jared.addison@vetpartners-700.net.au?subject=Question from the EMCC Seminar"
                   class="
                     inline-flex
                     items-center
@@ -194,7 +194,7 @@
                     text-base
                     font-medium
                     rounded-md
-                    text-vetpartners
+                    text-vetpartners-700
                     bg-white
                     hover:bg-gray-50
                   "
@@ -269,7 +269,7 @@
                       focus:outline-none
                       focus:ring-2
                       focus:ring-inset
-                      focus:ring-vetpartners
+                      focus:ring-vetpartners-700
                     "
                   >
                     <span class="sr-only">Close menu</span>
@@ -296,7 +296,7 @@
                 >
               </div>
               <a
-                href="mainto:jared.addison@vetpartners.net.au"
+                href="mainto:jared.addison@vetpartners-700.net.au"
                 class="
                   block
                   w-full
@@ -304,7 +304,7 @@
                   py-3
                   text-center
                   font-medium
-                  text-vetpartners
+                  text-vetpartners-700
                   bg-gray-50
                   hover:bg-gray-100
                 "
@@ -330,22 +330,24 @@
           >
             <span class="text-6xl block xl:inline" v-text="Heading" />
             {{ " " }}
-            <span class="text-5xl block text-vetpartners xl:inline" v-text="subHeading" />
+            <span
+              class="text-5xl block text-vetpartners-700 xl:inline"
+              v-text="subHeading"
+            />
           </h1>
           <p
             class="
-              mt-3
+              mt-0
               max-w-md
               mx-auto
               text-base text-gray-500
               sm:text-lg
-              md:mt-5 md:text-xl md:max-w-3xl
+              md:mt-1 md:text-xl md:max-w-3xl
             "
             v-text="msg"
           />
         </div>
       </main>
-      <img src="https://drjaredaddison.com/wp-content/uploads/2021/06/20210619_131156_0000.png" alt="" />
     </div>
   </div>
 </template>
@@ -361,3 +363,10 @@
     {name: "Additional resources", href: "/"},
   ]
 </script>
+
+<style>
+  body {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23468997' fill-opacity='0.26'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+</style>
